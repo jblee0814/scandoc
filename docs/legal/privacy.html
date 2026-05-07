@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스캔독(ScanDoc) 개인정보처리방침</title>
+    <style>
+        :root {
+            --text: #1F2937;
+            --muted: #6B7280;
+            --border: #E5E7EB;
+            --accent: #14B8A6;
+            --bg: #FFFFFF;
+            --bg-soft: #F9FAFB;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+        header .brand {
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+        h1 {
+            font-size: 28px;
+            margin: 8px 0 4px;
+            font-weight: 700;
+        }
+        header .meta {
+            color: var(--muted);
+            font-size: 14px;
+        }
+        h2 {
+            font-size: 18px;
+            margin: 36px 0 12px;
+            padding-top: 4px;
+            font-weight: 700;
+        }
+        h3 {
+            font-size: 16px;
+            margin: 20px 0 8px;
+            font-weight: 600;
+        }
+        p, li { font-size: 15px; }
+        ul, ol { padding-left: 22px; }
+        li { margin-bottom: 6px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0 8px;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th { background: var(--bg-soft); font-weight: 600; }
+        .callout {
+            background: var(--bg-soft);
+            border-left: 3px solid var(--accent);
+            padding: 14px 16px;
+            border-radius: 6px;
+            margin: 16px 0;
+            font-size: 14px;
+            color: var(--text);
+        }
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 13px;
+        }
+        a { color: var(--accent); }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="brand">ScanDoc · 스캔독</div>
+        <h1>개인정보처리방침</h1>
+        <div class="meta">시행일: 2026년 5월 7일 · 최종 갱신: 2026년 5월 7일</div>
+    </header>
+
+    <p>리미테크(이하 "회사")는 모바일 애플리케이션 <strong>스캔독(ScanDoc)</strong>(이하 "서비스")을 운영함에 있어 이용자의 개인정보를 중요하게 생각하며, 「개인정보 보호법」 및 관련 법령을 준수합니다. 본 방침은 회사가 어떤 정보를 수집하고, 어떤 목적으로 이용하며, 어떻게 보관·파기하는지를 안내합니다.</p>
+
+    <div class="callout">
+        <strong>핵심 요약.</strong> 스캔독은 카메라로 촬영한 문서 이미지, OCR로 추출한 텍스트, 자동/수동 마스킹 영역을 모두 <strong>이용자 기기 내부에만 저장</strong>합니다. 회사는 문서 이미지·OCR 텍스트·마스킹 데이터를 외부 서버로 전송하지 않으며 수집하지 않습니다.
+    </div>
+
+    <h2>1. 처리하는 개인정보 항목</h2>
+    <p>서비스는 회원가입 절차 없이 이용할 수 있으며, 회사가 서버로 직접 수집하는 개인정보는 없습니다. 다만 서비스 제공을 위해 다음 정보가 이용자 기기 내부에서 처리됩니다.</p>
+    <table>
+        <thead>
+            <tr><th>구분</th><th>항목</th><th>처리 위치</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>스캔 콘텐츠</td><td>문서 사진, OCR 추출 텍스트, 마스킹 좌표, PDF 파일, 썸네일</td><td>이용자 기기 내부 저장소</td></tr>
+            <tr><td>앱 설정</td><td>구매 상태(Pro 여부), 무료 사용량 카운트, 폴더·즐겨찾기 등 사용자 환경 설정</td><td>이용자 기기 내부 저장소</td></tr>
+            <tr><td>결제 정보</td><td>Google Play 결제 토큰 및 영수증</td><td>Google Play 빌링 라이브러리(구글)</td></tr>
+            <tr><td>오류 진단</td><td>크래시 스택 트레이스, 기기 모델·OS 버전, 익명 설치 식별자</td><td>Firebase Crashlytics(구글)</td></tr>
+            <tr><td>이용 통계</td><td>스캔 시작/완료, 마스킹 적용, PDF 저장 등 이벤트(개인 식별 정보 미포함)</td><td>Firebase Analytics(구글)</td></tr>
+        </tbody>
+    </table>
+    <p>회사는 주민등록번호, 외국인등록번호, 신용카드 번호, 계좌번호, 운전면허번호, 여권번호 등 <strong>민감한 개인정보를 직접 수집하지 않습니다</strong>. 해당 정보는 이용자가 스캔하는 문서에 포함될 수 있으며, 그 결과는 이용자 기기 내부에만 저장됩니다.</p>
+
+    <h2>2. 개인정보 처리 목적</h2>
+    <ul>
+        <li>스캔 문서의 OCR 텍스트 추출, 자동 민감정보 후보 탐지, 마스킹, PDF 생성·저장·공유 기능 제공</li>
+        <li>무료/Pro 사용량 한도 관리 및 Pro 구독 결제·복원 처리</li>
+        <li>크래시 및 오류 분석을 통한 서비스 안정성 개선</li>
+        <li>핵심 기능 사용성 개선을 위한 익명 통계 분석</li>
+    </ul>
+
+    <h2>3. 카메라 권한 사용</h2>
+    <p>스캔독은 문서 스캔 기능을 위해 카메라 권한을 요청합니다. 카메라 입력은 ML Kit 문서 스캐너 및 온디바이스 OCR 처리에만 사용되며, 촬영된 이미지는 이용자 기기 내부 앱 전용 저장소에만 저장됩니다. 회사는 카메라 영상 또는 사진을 외부로 전송하거나 보관하지 않습니다.</p>
+
+    <h2>4. 개인정보의 보관 및 파기</h2>
+    <ul>
+        <li>이용자가 앱 내에서 문서를 삭제하면 해당 이미지·OCR 텍스트·마스킹 좌표·PDF·썸네일은 즉시 기기에서 삭제됩니다.</li>
+        <li>이용자가 앱을 삭제하면 앱 전용 저장소에 보관된 모든 스캔 콘텐츠가 함께 삭제됩니다.</li>
+        <li>Crashlytics 진단 데이터는 Firebase 정책에 따라 최대 90일까지 보관 후 자동 삭제됩니다.</li>
+        <li>Analytics 이벤트 데이터는 Firebase 보존 설정에 따라 최대 14개월까지 보관됩니다.</li>
+        <li>Google Play 결제 정보 보관 기간은 Google Play 정책을 따릅니다.</li>
+    </ul>
+
+    <h2>5. 제3자 제공 및 처리 위탁</h2>
+    <p>회사는 이용자 동의 없이 개인정보를 제3자에게 제공하지 않습니다. 다만 서비스 운영을 위해 아래 사업자에게 일부 처리 업무를 위탁합니다.</p>
+    <table>
+        <thead><tr><th>수탁자</th><th>위탁 업무</th><th>국외 이전</th></tr></thead>
+        <tbody>
+            <tr><td>Google LLC</td><td>Google Play 결제·구독 관리</td><td>미국</td></tr>
+            <tr><td>Google LLC (Firebase)</td><td>Crashlytics 크래시 분석, Analytics 익명 사용 통계</td><td>미국</td></tr>
+        </tbody>
+    </table>
+    <p>위 위탁은 서비스 제공에 필요한 범위에 한정하며, 위탁이 종료되면 관련 정보는 수탁자의 보관 정책에 따라 파기됩니다.</p>
+
+    <h2>6. 이용자 권리</h2>
+    <ul>
+        <li>이용자는 언제든지 앱 내에서 개별 문서를 삭제하거나 앱 자체를 삭제하여 기기 내 모든 스캔 데이터를 제거할 수 있습니다.</li>
+        <li>이용자는 기기 시스템 설정에서 카메라·알림·다른 앱 위에 표시 권한 등 앱 권한을 언제든지 철회할 수 있습니다.</li>
+        <li>Google Play 구독은 Google Play 스토어의 구독 관리 화면에서 이용자가 직접 해지할 수 있습니다.</li>
+        <li>Crashlytics·Analytics 수집을 원치 않을 경우 앱을 삭제하시거나 회사에 문의하시면 데이터 비활성화 또는 삭제 요청을 처리해 드립니다.</li>
+    </ul>
+
+    <h2>7. 만 14세 미만 아동의 개인정보</h2>
+    <p>서비스는 만 14세 미만 아동을 대상으로 하지 않으며, 회사는 만 14세 미만 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+
+    <h2>8. 안전성 확보 조치</h2>
+    <ul>
+        <li>OCR 결과 및 마스킹 좌표는 앱 내부 전용 저장소(앱 샌드박스)에만 저장하여 다른 앱이 접근할 수 없도록 합니다.</li>
+        <li>외부 공유 시 Android FileProvider를 통해 일회성 권한으로만 PDF가 공유됩니다.</li>
+        <li>회사는 카메라·OCR 처리 결과를 외부 서버로 전송하지 않으므로 외부 노출 위험을 구조적으로 차단합니다.</li>
+    </ul>
+
+    <h2>9. 개인정보 보호책임자 및 문의처</h2>
+    <ul>
+        <li>개인정보 보호책임자: 리미테크 개발팀</li>
+        <li>이메일: <a href="mailto:support@rimitech.co.kr">support@rimitech.co.kr</a></li>
+    </ul>
+
+    <h2>10. 정책 변경</h2>
+    <p>본 방침의 내용이 변경되는 경우 시행일 7일 전 앱 또는 회사 웹사이트를 통해 공지합니다. 중대한 변경의 경우 30일 전 사전 고지합니다.</p>
+
+    <footer>
+        © 2026 RimiTech. ScanDoc는 리미테크의 모바일 애플리케이션입니다.
+    </footer>
+</div>
+</body>
+</html>
